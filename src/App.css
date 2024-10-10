@@ -1,0 +1,81 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9ecef; /* Color de fondo suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+h1 {
+  color: #343a40; /* Color del título */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Container for form */
+.container {
+  background-color: #fff; /* Fondo blanco para el formulario */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más prominente */
+  padding: 30px; /* Espacio interior */
+  width: 90%; /* Ancho responsivo */
+  max-width: 400px; /* Ancho máximo */
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column; /* Disposición en columna */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="password"] {
+  padding: 15px; /* Espaciado interior */
+  margin-bottom: 20px; /* Espacio inferior */
+  border: 1px solid #ced4da; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: border-color 0.3s; /* Transición suave */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Color del borde al enfocarse */
+  outline: none; /* Eliminar el contorno predeterminado */
+}
+
+/* Button styles */
+button {
+  padding: 15px; /* Espaciado interior */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+button:active {
+  transform: translateY(1px); /* Efecto de depresión al hacer clic */
+}
+
+/* Message styles */
+p {
+  color: #dc3545; /* Color de los mensajes de error */
+  margin: 15px 0; /* Margen superior e inferior */
+  text-align: center; /* Centrar el texto */
+}
